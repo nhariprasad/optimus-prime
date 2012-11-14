@@ -1,0 +1,5 @@
+fees
+college
+school
+tuition
+university

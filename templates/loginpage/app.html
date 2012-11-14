@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        	eX-Opti A Multi-Platform Expense Management System
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="c" data-role="header">
+                <h4>
+                    eX-Opti
+                </h4>
+            </div>
+            <form action = "/login" method="post" accept-charset="utf-8">
+
+            <div data-role="content" style="padding: 15px">
+            	                <div data-role="fieldcontain">
+                	
+                    <fieldset data-role="controlgroup">
+                    	
+                        <label for="textinput3">
+                            Mobile Number
+                        </label>
+                        <input name="cid" id="textinput3" placeholder="" value="" type="tel" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput4">
+                            Password
+                        </label>
+                        <input name="pin" id="textinput4" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                
+                <input type="submit" data-theme="b" value="Login"/>
+                {% ifnotequal error None %}
+					<h5 style="color: red">
+						{{ error }}
+					</h5>
+{% endifnotequal %}
+            </div>
+            </form>
+            <div data-theme="c" data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="/about" data-theme="" data-icon="">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/credits" data-theme="" data-icon="">
+                                Credits
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="c" data-role="header">
+                <h3>
+                    eX-Opti
+                </h3>
+                <a data-role="button" data-transition="fade" href="/analysis/" data-icon="back" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="slider1">
+                        </label>
+                        <form action = "/custom/" method="post" accept-charset="utf-8">
+                        <input type="range" name="slider" id="slider1" value="7" min="0" max="365" data-highlight="true" />
+                        <input type="submit" data-icon="star" data-iconpos="left" value="Submit" />
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="c" data-role="header">
+                <a data-role="button" data-rel="back" data-transition="fade" href="/addentry/" data-icon="back" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <h3>
+                    eX-Opti
+                </h3>
+                <a data-role="button" data-transition="fade" href="/logout" data-icon="delete" data-iconpos="left" class="ui-btn-right">
+                    Logout
+                </a>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="/addentry/" data-theme="" data-icon="">
+                                Add Entry
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/analytics/" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Analytics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/transaction/" data-theme="" data-icon="">
+                                Transaction
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content" style="padding: 15px">
+            	<form action = "" method="post" accept-charset="utf-8">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Overview
+                    </li>
+                    <li  data-theme="c">
+                        <a href="/analysisview/?time=today" data-transition="slide">
+                            Today
+                        </a>
+                    </li>
+                    <li name = "week" data-theme="c">
+                        <a href="/analysisview/?time=week" data-transition="slide">
+                            This Week
+                        </a>
+                    </li>
+                    <li name = "month" data-theme="c">
+                        <a href="/analysisview/?time=month" data-transition="slide">
+                            This Month
+                        </a>
+                    </li>
+                    <li name = "year" data-theme="c">
+                        <a href="/analysisview/?time=year" data-transition="slide">
+                            This Year
+                        </a>
+                    </li>
+                    <li name = "custom" data-theme="c">
+                        <a href="/custom/" data-transition="slide">
+                            Custom
+                        </a>
+                    </li>
+                </ul>
+               </form>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

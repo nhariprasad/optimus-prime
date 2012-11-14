@@ -1,0 +1,20 @@
+This project is basically an expense management system with backend on the cloud (Google App Engine) and a web and mobile(telephone call based and android app based) frontend.
+
+It is a mashup of the following APIs:
+
+1) Kookoo API (www.kookoo.in)
+2) Google App Engine API
+3) ZAP API (Not currently implemented)
+
+User calls a number (provided by Kookoo API) and responds to a set of queries. First he is presented with a main menu where he selects whether he wants to add a new entry, obtain analytics of previous spendings or make a transaction using the ZAP API.
+
+Adding a new entry:
+He is asked to speak out where he spent the money and then enter the amount using the keypad. The caller id, voice recording URL, amount, category and date are then stored on the App Engine Datastore. 
+
+Analytics of previous spendings:
+Quick Analysis: The day's total Spending, Current Bank Balance (based on previous User Entry or querying the bank using ZAP API)
+Detailed Analysis: Total spending (as per Category, last week, last month, last year)
+
+Make transactions:
+Will be done using ZAP API
+

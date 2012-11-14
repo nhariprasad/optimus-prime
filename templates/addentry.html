@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+{% block script%}{%endblock%}
+{% block body %}
+
+	
+	<form action = "" method="post" accept-charset="utf-8">
+		
+		
+		<p>
+			Mobile Number : <input type="text" name = "cid"  />	
+		<p>
+		<p>Choose category	</p>
+		<p>
+			<input type="radio" name="category" value="food" /> Food<br />	
+			<input type="radio" name="category" value="transport" />Transport <br />
+			<input type="radio" name="category" value="shopping" /> Shopping<br />
+			<input type="radio" name="category" value="entertainment" /> Entertainment<br />
+			<input type="radio" name="category" value="heathcare" /> Healthcare<br />
+			<input type="radio" name="category" value="education" /> Education<br />
+			<input type="radio" name="category" value="others" /> Others
+		</p>
+		<p>
+			Amount : <input type="text" name = "amount"  />	
+		<p>
+			<input type = "submit" value="Submit" />
+		</p>
+		
+	</form>
+	
+
+{% endblock %}
